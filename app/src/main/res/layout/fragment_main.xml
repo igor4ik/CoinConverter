@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.igor4ik83gmail.coinconverter.Main_Fragment">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal|top">
+
+        <LinearLayout
+            android:id="@+id/thumbnail_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="3dip" >
+            <ImageView
+                android:layout_width="45dip"
+                android:layout_height="45dip"
+                android:id="@+id/img_flag_main"
+                android:src="@drawable/ic_launcher"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Currency Name"
+            android:id="@+id/tv_currency_code_main"
+            android:paddingBottom ="10dip"
+            android:layout_alignBottom="@+id/thumbnail_main"
+            android:layout_toRightOf="@+id/thumbnail_main"
+            android:layout_toEndOf="@+id/thumbnail_main" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/et_quantity"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignTop="@+id/tv_currency_code_main"
+            android:layout_toRightOf="@+id/tv_currency_code_main"
+            android:layout_toEndOf="@+id/tv_currency_code_main"/>
+    </RelativeLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>
