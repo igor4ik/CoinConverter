@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/et_search"
         android:layout_gravity="center_horizontal|top"
-        android:hint="Search products.."
+        android:hint="Search country.."
         android:inputType="textVisiblePassword"/>
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
