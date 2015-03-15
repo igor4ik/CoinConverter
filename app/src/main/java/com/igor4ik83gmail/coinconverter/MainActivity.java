@@ -28,7 +28,7 @@ public class MainActivity extends Activity implements TaskCompleted{
         String locationCode = loc.getLocationCode();
         String currencyCode = HelpFunctions.get_Currency_Code_from_Country_code(locationCode);
         System.out.println("Currency code is :"+currencyCode);*/
-        /*hi github*/
+        /**/
 
         context = this;
         requestRatesForCurrenciesFromDB(context);
